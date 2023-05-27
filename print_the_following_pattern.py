@@ -1,8 +1,6 @@
 n = int(input())
+l = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 for i in range(n):
-    for j in range(n):
-        if j==i or j == n-i-1:
-            print("x",end="")
-        else:
-            print(0,end="")
+    for j in range(n-i):
+        print(l[n-i-1],end=" ")
     print()
