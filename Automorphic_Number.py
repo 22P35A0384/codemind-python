@@ -1,2 +1,8 @@
 n = int(input())
-print("Automorphic Number" if int(str(n**2)[-len(str(n))::]) == n else "Not an Automorphic Number")
+m = n**2
+x = str(n)
+y = str(m)
+if x in y:
+    print("Automorphic Number")
+else:
+    print("Not an Automorphic Number")
